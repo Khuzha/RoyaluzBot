@@ -1,8 +1,8 @@
 const telegraf = require('telegraf')
-const token = require('./token')
+const token = require('./token').token
 const data = require('./data')
 //const bb = require('./bb')
-const bot = new telegraf(token.token)
+const bot = new telegraf(token)
 
 bot.context.categ = {}
 
